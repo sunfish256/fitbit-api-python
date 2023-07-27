@@ -90,7 +90,7 @@ Save it under the name `fb_conf.json`.
 }
 ```
 Fill in the token obtained in [3. Issuance of access token](#3-issuance-of-access-token).  
-"client_id" can be found on the https://dev.fitbit.com/apps by clicking on the registered app.  
+"client_id" can be found at https://dev.fitbit.com/apps by clicking on the registered app.  
 Since the access token is automatically renewed by the application, it does not matter if it has expired.  
 
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/2ea8e312-0c8b-47e5-8643-57734b2753bb)
