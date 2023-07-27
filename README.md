@@ -80,7 +80,7 @@ The Access Token is used to run the API. This Token has a lifespan of 8 hours, s
 
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/ad226a3d-94df-42b8-92a1-e11ffc4c6aae)
 
-## Running Web APIs in Python
+### 4. Create a config file
 Save it under the name `fb_conf.json`.
 ```
 {
