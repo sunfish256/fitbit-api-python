@@ -3,8 +3,8 @@ For HR/HRV data extraction
 
 ## Preperation
 ### 0. Register your fitbit device in the app
-iPhone: https://apps.apple.com/jp/app/fitbit/id462638897
-Android: https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=ja&gl=US&pli=1
+iPhone: https://apps.apple.com/jp/app/fitbit/id462638897  
+Android: https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=ja&gl=US&pli=1  
 
 ### 1. create a fitbit account
 Create an account at https://accounts.fitbit.com/signup  
