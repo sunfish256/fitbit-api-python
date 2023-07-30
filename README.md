@@ -2,7 +2,7 @@
 For HR/HRV data extraction
 
 ## Preperation
-### 0. Register your fitbit device in the app
+### 0. Setup your fitbit device in the app
 iPhone: https://apps.apple.com/jp/app/fitbit/id462638897<br>
 Android: https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile&hl=ja&gl=US&pli=1<br>
 
@@ -99,3 +99,27 @@ Fill in the token obtained in [3. Issuance of access token](#3-issuance-of-acces
 Since the access token is automatically renewed by the application, it does not matter if it has expired.  
 
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/97219cc0-18ad-430b-9912-a27313468e21)
+
+### 5. Check your token
+Run [fitbit-api-python/app/update_token.ipynb](https://colab.research.google.com/github/sunfish256/fitbit-api-python/blob/main/app/update_token.ipynb)  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunfish256/fitbit-api-python/blob/main/app/update_token.ipynb)  
+When you run it, place `fb_conf.json` in the same directory.  
+
+![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/dbe80939-8e6e-4a7e-9d5d-d76965b9c812)  
+
+When running in Google Colab, `Ctrl+F9` will run all runtimes.  
+If the token has expired, the program will automatically update it and overwrite `fb_conf.json`.  
+If the message "The request succeeded." is displayed, the API is working properly.  
+
+### 6. Get heart rate
+Run [fitbit-api-python/app/get_heart_rate.ipynb](https://colab.research.google.com/github/sunfish256/fitbit-api-python/blob/main/app/get_heart_rate.ipynb)  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunfish256/fitbit-api-python/blob/main/app/get_heart_rate.ipynb)  
+When you run it, place `fb_conf.json` in the same directory.  
+Also, enter the date `DATE` in cell 2 for which the data is to be retrieved.
+
+![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/0d38d6cf-013f-48e0-a0de-86f33168709a)
+
+When running in Google Colab, `Ctrl+F9` will run all runtimes.  
+Download the csv when it is output.
+
+![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/df203231-d71f-4aeb-a8d9-1fa665efea30)
