@@ -76,21 +76,22 @@ If no errors are displayed in the text area below, you are OK.
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/860e6ba0-b52f-498b-b5fa-bfba09fcea7a)
 
 **Be sure to note the Access Token and Refresh Token.**  
-The Access Token is used to run the API. This Token has a lifespan of 8 hours, so when it expires, the Access Token is reissued using Refresh Token.
+The Access Token is used to run the API. Refresh Token has a lifespan of 8 hours, so when it expires, the token is reissued using Access Token.
 
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/ad226a3d-94df-42b8-92a1-e11ffc4c6aae)
 
 ### 4. Create a config file
 Save it under the name `fb_conf.json`.
-```
+```json
 {
-  "client_id": "YOUR_CLIENT_ID",
-  "access_token": "YOUR_ACCESS_TOKEN",
-  "refresh_token": "YOUR_REFRESH_TOKEN"
+  "client_id": "xxxxxx",
+  "client_secret": "xxxxxx",
+  "access_token": "xxxxxx",
+  "refresh_token": "xxxxxx"
 }
 ```
 Fill in the token obtained in [3. Issuance of access token](#3-issuance-of-access-token).  
-"client_id" can be found at https://dev.fitbit.com/apps by clicking on the registered app.  
+"client_id" and "client_secret" can be found at https://dev.fitbit.com/apps by clicking on the registered app.  
 Since the access token is automatically renewed by the application, it does not matter if it has expired.  
 
 ![image](https://github.com/sunfish256/fitbit-api-python/assets/84883098/2ea8e312-0c8b-47e5-8643-57734b2753bb)
